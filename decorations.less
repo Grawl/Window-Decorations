@@ -1,5 +1,4 @@
 @import 'mixins';
-@import 'library/font.css';
 .window {
 	height: 247px;
 	width: 647px;
@@ -247,39 +246,31 @@
 					color: transparent;
 					position: relative;
 					border-left: 1px solid @borderSep;
+						::before {
+							content: '';
+							display: block;
+							position: absolute;
+							top: 5px;
+							left: 6px;
+							width: 8px;
+							height: 8px;
+							background: url('library/gnome-shell icons.svg?css=y') no-repeat;
+						}
 						&:last-child {
 							border: 0;
 						}
-					@shadow: 0 1px 1px #959595;
-						::before {
-							display: block;
-							position: absolute;
-							top: 2px;
-							left: 7px;
-							color: white;
-							font-family: 'om';
-							font-size: 9px;
-							text-shadow: @shadow;
-							}
 						&.close {
-							::before {
-								content: 'x';
-								}
 							}
 						&.min {
-							::before {
-								content: '';
-								width: 10px;
-								height: 3px;
-								top: 7px;
-								left: 6px;
-								background: white;
-								box-shadow: @shadow;
+								::before {
+									background-position-x: -15px;
+									left: 7px;
 								}
 							}
 						&.resize {
-							::before {
-								content: 'X';
+								::before {
+									background-position-x: -8px;
+									left: 7px;
 								}
 							}
 					}
