@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'om';
+	src: url('om_icon_pk-webfont.eot');
+	src: url('om_icon_pk-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('om_icon_pk-webfont.woff') format('woff'),
+	     url('om_icon_pk-webfont.ttf') format('truetype'),
+	     url('om_icon_pk-webfont.svg#omiconpack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
